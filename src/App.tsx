@@ -25,8 +25,8 @@ import {
 } from 'lucide-react';
 
 // Images provided by user
-const FOUNDER_IMAGE = "src/images/founder.jpg";
-const LOGO_IMAGE = "src/images/logo.JPG";
+const FOUNDER_IMAGE = "/images/founder.jpg";
+const LOGO_IMAGE = "/images/logo.JPG";
 
 const HERO_IMAGES = [
   "src/images/s1.jpg",
