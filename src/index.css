@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+  --color-mission-red: #B22222;
+  --color-mission-gold: #D4AF37;
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Inter", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply font-sans bg-white text-slate-900;
+  }
+  h1, h2, h3, h4 {
+    @apply font-serif;
+  }
+}
