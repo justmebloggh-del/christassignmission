@@ -5,17 +5,17 @@
 
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { 
-  Menu, 
-  X, 
+import {
+  Menu,
+  X,
   ChevronLeft,
-  ChevronRight, 
-  Heart, 
-  Globe, 
-  Users, 
-  BookOpen, 
-  Mail, 
-  Phone, 
+  ChevronRight,
+  Heart,
+  Globe,
+  Users,
+  BookOpen,
+  Mail,
+  Phone,
   MapPin,
   Facebook,
   Twitter,
@@ -25,14 +25,23 @@ import {
 } from 'lucide-react';
 
 // Images provided by user
-const FOUNDER_IMAGE = "src/images/founder.jpg";
-const LOGO_IMAGE = "src/images/logo.JPG";
+import founderImg from './images/founder.jpg';
+import logoImg from './images/logo.JPG';
+import s1Img from './images/s1.jpg';
+import s2Img from './images/s2.jpg';
+import s3Img from './images/s3.jpg';
+import s4Img from './images/s4.jpg';
+import ordiImg from './images/ordi.jpg';
+import bannerImg from './images/banner.jpg';
+
+const FOUNDER_IMAGE = founderImg;
+const LOGO_IMAGE = logoImg;
 
 const HERO_IMAGES = [
-  "src/images/s1.jpg",
-  "src/images/s2.jpg",
-  "src/images/s3.jpg",
-  "src/images/s4.jpg"
+  s1Img,
+  s2Img,
+  s3Img,
+  s4Img
 ];
 
 const Navbar = () => {
@@ -244,7 +253,7 @@ const AboutSection = () => {
           >
             <div className="aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl">
               <img 
-                src="src/images/ordi.jpg" 
+                src={ordiImg}
                 alt="Mission Work" 
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
@@ -440,7 +449,7 @@ const SocialFeed = () => {
     {
       id: 2,
       type: 'facebook',
-      image: 'src/images/banner.jpg',
+      image: bannerImg,
       likes: '850',
       caption: 'Our youth outreach program is growing! See how you can get involved.',
     },
