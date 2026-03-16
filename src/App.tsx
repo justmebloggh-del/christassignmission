@@ -25,14 +25,14 @@ import {
 } from 'lucide-react';
 
 // Images provided by user
-const FOUNDER_IMAGE = "public/images/founder.jpg";
-const LOGO_IMAGE = "public/images/logo.JPG";
+const FOUNDER_IMAGE = "/images/founder.jpg";
+const LOGO_IMAGE = "/images/logo.JPG";
 
 const HERO_IMAGES = [
-  "public/images/s1.jpg",
-  "public/images/s2.jpg",
-  "public/images/s3.jpg",
-  "public/images/s4.jpg"
+  "/images/s1.jpg",
+  "/images/s2.jpg",
+  "/images/s3.jpg",
+  "/images/s4.jpg"
 ];
 
 const Navbar = () => {
@@ -244,7 +244,7 @@ const AboutSection = () => {
           >
             <div className="aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl">
               <img 
-                src="public/images/ordi.jpg" 
+                src="/images/ordi.jpg" 
                 alt="Mission Work" 
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
@@ -440,7 +440,7 @@ const SocialFeed = () => {
     {
       id: 2,
       type: 'facebook',
-      image: 'public/images/banner.jpg',
+      image: '/images/banner.jpg',
       likes: '850',
       caption: 'Our youth outreach program is growing! See how you can get involved.',
     },
